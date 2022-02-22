@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+jupyter contrib nbextension install --user
+jupyter nbextension enable --py widgetsnbextension
+jupyter nbextension install --py jupytext --user
+jupyter labextension install jupyterlab-jupytext
+jupyter labextension install @jupyter-widgets/jupyterlab-manager --minimize=False
